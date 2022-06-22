@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    td {
+        border: 1px solid black;
+        width: 80px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <table>
+
+        <tr>
+            <td id="A1">A1</td>
+        </tr>
+
+        <tr>
+            <td id="A2">A2</td>
+        </tr>
+
+        <tr>
+            <td id="A3">A3</td>
+        </tr>
+
+        <tr>
+            <td id="A4">A4</td>
+        </tr>
+
+        <tr>
+            <td id="A5">A5</td>
+        </tr>
+
+        <tr>
+            <td id="A6">A6</td>
+        </tr>
+
+        <tr>
+            <td id="A7">A7</td>
+        </tr>
+
+    </table>
+
+
+
+</body>
+
+<script>
+
+    const banco = ['Alex', 'Lucrécia', 'Kildery', 'Jonas', 'Renan', 'Vívian', 'Andréa', 'Fernanda'];
+    let celula = "A";
+    let i = 1;
+
+    for (let pos = 0; pos < banco.length; pos++) {
+        let nomes = banco[Math.floor(Math.random() * banco.length)];
+        document.getElementById(celula+i).innerHTML = nomes;
+        i++;
+    }
+
+
+
+</script>
+
+</html>
